@@ -13,7 +13,7 @@ Official PyTorch implementation of our paper:
 > 🔽 **请将你画的模型结构图放这里，如 `figures/framework.png`**
 
 <p align="center">
-  <img src="figures/framework.png" width="80%">
+  <img src="assert/sadn.png" width="80%">
 </p>
 
 
