@@ -10,12 +10,14 @@ Official PyTorch implementation of our paper:
 ---
 
 ## 🏗 Framework Overview 
-> 🔽 **请将你画的模型结构图放这里，如 `figures/framework.png`**
+
 
 <p align="center">
-  <img src="assert/sadn.png" width="80%">
+  <img src="assets/SADN.png" width="80%">
 </p>
-
+<p align="center">
+  <img src="assets/HFRM.png" width="80%">
+</p>
 
 ---
 
@@ -47,50 +49,9 @@ pip install -r requirements.txt
 pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 
----
 
-## 📁 Project Structure
 
-```
-SADN/
-│── configs/
-│── datasets/
-│── engine/
-│── models/
-│   │── CGDM/
-│   │── TDC/
-│   │── HFRM/
-│── tools/
-│   │── train_net.py
-│   │── test_net.py
-│── weights/
-│── README.md
-```
-
----
-
-## ▶️ Training
-
-### **1. Base training (Stage 1)**
-
-```bash
-python tools/train_net.py \
-    --config-file configs/sadn_base.yaml \
-    --num-gpus 4
-```
-
-### **2. Few-shot finetuning (Stage 2)**
-
-```bash
-python tools/train_net.py \
-    --config-file configs/sadn_finetune.yaml \
-    --num-gpus 4 \
-    MODEL.WEIGHTS weights/sadn_base.pth
-```
-
----
-
-## 🧪 Evaluation
+## 🧪 Training and Evaluation
 
 ### **Evaluate on COCO**
 
@@ -114,22 +75,23 @@ python tools/test_net.py \
 
 ## 📥 Pretrained Weights
 
-| Model     | Dataset | Stage              | Download      |
-| --------- | ------- | ------------------ | ------------- |
-| SADN-Base | COCO    | Base training      | `<your-link>` |
-| SADN      | COCO    | Few-shot finetuned | `<your-link>` |
-| SADN      | VOC     | Few-shot finetuned | `<your-link>` |
+| Dataset   | Model Weghts|
+| :---: |:---: | 
+| COCO-Base | [model](https://drive.google.com/file/d/1zxs66CXBOFDTFdMEa5v6ijIZSaORCSo7/view?usp=drive_link) | 
+| VOC-Base1 | [model](https://drive.google.com/file/d/1zxs66CXBOFDTFdMEa5v6ijIZSaORCSo7/view?usp=drive_link) | 
+| VOC-Base1 | [model](https://drive.google.com/file/d/1zxs66CXBOFDTFdMEa5v6ijIZSaORCSo7/view?usp=drive_link) | 
+| VOC-Base1 | [model](https://drive.google.com/file/d/1zxs66CXBOFDTFdMEa5v6ijIZSaORCSo7/view?usp=drive_link)| 
 
-请将 `<your-link>` 替换为你自己的权重地址（Google Drive / Baidu / GitHub Release）。
-
----
 
 
 ---
 
-## 📊 Experimental Results (插图位)
 
-> 🔽 **放你的 VOC/COCO 结果可视化或表格截图**
+---
+
+## 📊 Experimental Results
+
+
 
 ### COCO Few-Shot (nAP)
 
@@ -174,4 +136,11 @@ This project is built on [Detectron2](https://github.com/facebookresearch/detect
 ---
 
 # 🎉 完成！
+
+
+
+
+
+
+
 
