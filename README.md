@@ -27,7 +27,6 @@ Official PyTorch implementation of our paper:
 
 ```bash
 git clone https://github.com/<your-github>/SADN.git
-cd SADN
 ```
 
 ### 2. Create environment
@@ -53,22 +52,16 @@ pip install 'git+https://github.com/facebookresearch/detectron2.git'
 
 ## 🧪 Training and Evaluation
 
-### **Evaluate on COCO**
+### **To reproduce the FSOD results on COCOO**
 
 ```bash
-python tools/test_net.py \
-    --config-file configs/sadn_finetune.yaml \
-    --num-gpus 1 \
-    MODEL.WEIGHTS weights/sadn_ft.pth
+bash run_coco_fsod.sh r101 8 sadn
 ```
 
-### **Evaluate on VOC**
+### **To reproduce the FSOD results on COCO**
 
 ```bash
-python tools/test_net.py \
-    --config-file configs/sadn_voc.yaml \
-    --num-gpus 1 \
-    MODEL.WEIGHTS weights/sadn_voc.pth
+bash run_voc_fsod.sh r101 8 sadn
 ```
 
 ---
@@ -77,10 +70,10 @@ python tools/test_net.py \
 
 | Dataset   | Model Weghts|
 | :---: |:---: | 
-| COCO-Base | [model](https://drive.google.com/file/d/1zxs66CXBOFDTFdMEa5v6ijIZSaORCSo7/view?usp=drive_link) | 
-| VOC-Base1 | [model](https://drive.google.com/file/d/1zxs66CXBOFDTFdMEa5v6ijIZSaORCSo7/view?usp=drive_link) | 
-| VOC-Base1 | [model](https://drive.google.com/file/d/1zxs66CXBOFDTFdMEa5v6ijIZSaORCSo7/view?usp=drive_link) | 
-| VOC-Base1 | [model](https://drive.google.com/file/d/1zxs66CXBOFDTFdMEa5v6ijIZSaORCSo7/view?usp=drive_link)| 
+| COCO-Base | [model](https://pan.quark.cn/s/68e8530ee6c6) | 
+| VOC-Base1 | [model](https://pan.quark.cn/s/2b0ed478f47d) | 
+| VOC-Base2 | [model](https://pan.quark.cn/s/a918cc33f3bd) | 
+| VOC-Base3 | [model](https://pan.quark.cn/s/cbe9b6e3fd8d)| 
 
 
 
@@ -96,35 +89,27 @@ python tools/test_net.py \
 ### COCO Few-Shot (nAP)
 
 <p align="center">
-  <img src="figures/coco_results.png" width="70%">
+   <img width=70% alt="image" src="https://github.com/user-attachments/assets/63312229-0ff0-46a6-9d8e-aadfb13bd898" />
+
 </p>
 
-### VOC Few-Shot (AP50)
+### VOC Few-Shot (mAP50)
 
 <p align="center">
-  <img src="figures/voc_results.png" width="70%">
+  <img width="688" height="341" alt="image" src="https://github.com/user-attachments/assets/2eb07f78-4924-47c6-8203-c151711c3af6" />
+
+
 </p>
 
 ### Detection Visualization
 
 <p align="center">
-  <img src="figures/vis.png" width="80%">
+  <img src="assets/vis.png" width="80%">
 </p>
 
 ---
 
-## ✏️ Citation
 
-如果你将其投稿 / 发表，放上 BibTeX：
-
-```bibtex
-@article{your_sadn_2025,
-  title={SADN: Semantic-Aligned Decoupled Network for Few-Shot Object Detection},
-  author={Li, Saibo and Wang, Yuxiang and ...},
-  journal={IEEE Transactions on Circuits and Systems for Video Technology},
-  year={2025}
-}
-```
 
 ---
 
