@@ -42,7 +42,7 @@ conda activate sadn
 pip install -r requirements.txt
 ```
 
-### 4. Install Detectron2 (compatible version)
+### 4. Install Detectron2 (0.3)
 
 ```bash
 pip install 'git+https://github.com/facebookresearch/detectron2.git'
@@ -52,13 +52,13 @@ pip install 'git+https://github.com/facebookresearch/detectron2.git'
 
 ## 🧪 Training and Evaluation
 
-### **To reproduce the FSOD results on COCOO**
+### **To reproduce the FSOD results on COCO**
 
 ```bash
 bash run_coco_fsod.sh r101 8 sadn
 ```
 
-### **To reproduce the FSOD results on COCO**
+### **To reproduce the FSOD results on VOC**
 
 ```bash
 bash run_voc_fsod.sh r101 8 sadn
