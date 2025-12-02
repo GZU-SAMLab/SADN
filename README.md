@@ -89,14 +89,15 @@ bash run_voc_fsod.sh r101 8 sadn
 ### COCO Few-Shot (nAP)
 
 <p align="center">
-   <img width=70% alt="image" src="https://github.com/user-attachments/assets/63312229-0ff0-46a6-9d8e-aadfb13bd898" />
+   <img width="704" height="305" alt="image" src="https://github.com/user-attachments/assets/e30cc9c6-1530-4d0e-8799-56fe0ca1b1f0" />
+
 
 </p>
 
 ### VOC Few-Shot (mAP50)
 
 <p align="center">
-  <img width="688" height="341" alt="image" src="https://github.com/user-attachments/assets/2eb07f78-4924-47c6-8203-c151711c3af6" />
+  <img width="701" height="305" alt="image" src="https://github.com/user-attachments/assets/2eb07f78-4924-47c6-8203-c151711c3af6" />
 
 
 </p>
