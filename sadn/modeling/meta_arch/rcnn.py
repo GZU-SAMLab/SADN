@@ -8,7 +8,7 @@ from detectron2.modeling.postprocessing import detector_postprocess
 from detectron2.modeling.proposal_generator import build_proposal_generator
 from .build import META_ARCH_REGISTRY
 from .gdl import decouple_layer, AffineLayer
-from dcfs.modeling.roi_heads import build_roi_heads
+from sadn.modeling.roi_heads import build_roi_heads
 
 __all__ = ["GeneralizedRCNN"]
 
