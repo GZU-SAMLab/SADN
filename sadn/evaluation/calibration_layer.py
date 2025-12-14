@@ -10,7 +10,7 @@ import torch.nn.functional as F
 import torch.distributed
 from detectron2.structures import ImageList
 from detectron2.modeling.poolers import ROIPooler
-from dcfs.dataloader import build_detection_test_loader
+from sadn.dataloader import build_detection_test_loader
 from detectron2.data import MetadataCatalog
 from .archs import clip
 import copy
