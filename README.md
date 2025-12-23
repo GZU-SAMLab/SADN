@@ -26,7 +26,7 @@ Official PyTorch implementation of our paper:
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/<your-github>/SADN.git
+git clone https://github.com/GZU-SAMLab/SADN.git
 ```
 
 ### 2. Create environment
